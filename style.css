@@ -8,13 +8,13 @@ body {
     margin-top: 20px;
 }
 
-.fit{
+.full{
     object-fit: contain;
     margin:auto;
     height:20vh;
 }
 
-.full{
+.fit{
     object-fit:cover;
     width:100%;
     margin:auto;
