@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Random Images Grid</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <title>Random Image Grid</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="new-images-button">New Images</button><br>
+  <h1>Random Image Grid</h1>
+  <header>
+    <div class="dropdown">
+      <label for="image-source">Image source:</label>
+      <select id="image-source">
+        <option value="lorem-picsum">Lorem Picsum</option>
+        <option value="pexels">Pexels</option>
+      </select>
+    </div>
+    <button id="go-button">Fetch</button>
+  </header>
+  <main>
     <div id="image-grid-container"></div>
-    <script src="main.js"></script>
+  </main>
+  <script src="main.js"></script>
 </body>
 </html>

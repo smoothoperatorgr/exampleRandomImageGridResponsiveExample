@@ -1,11 +1,53 @@
+body {
+    background-color:black;
+}
 #image-grid-container {
+    
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     margin-top: 20px;
 }
 
 img {
+    object-fit: contain;
     margin:auto;
-    height: 320px;
+    height:20vh;
 }
+
+
+header {
+    display:grid;
+}
+div {
+    
+    color:violet;
+    margin:auto;
+}
+h1 {
+    color:violet;
+    text-align: center;
+}
+button {
+    
+    color:violet;
+    
+    background-color:rgb(80, 80, 80);
+    margin:auto;
+    margin-top:10px;
+    width: 240px;
+}
+select {
+    margin:10px;
+    color:violet;
+    
+    background-color:rgb(80, 80, 80);
+}
+@media (min-width: 600px) {
+    #image-grid-container { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1200px) {
+    #image-grid-container { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (min-width: 1800px) {
+    #image-grid-container { grid-template-columns: repeat(4, 1fr); }
+  }
