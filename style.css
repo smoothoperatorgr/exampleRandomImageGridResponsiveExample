@@ -8,8 +8,15 @@ body {
     margin-top: 20px;
 }
 
-img {
+.fit{
     object-fit: contain;
+    margin:auto;
+    height:20vh;
+}
+
+.full{
+    object-fit:cover;
+    width:100%;
     margin:auto;
     height:20vh;
 }
@@ -17,11 +24,17 @@ img {
 
 header {
     display:grid;
+    justify-content: space-around;
 }
 div {
     
     color:violet;
     margin:auto;
+}
+
+#right-buttons {
+    margin-left:auto;
+    margin-right:10px;
 }
 h1 {
     color:violet;
@@ -35,19 +48,22 @@ button {
     margin:auto;
     margin-top:10px;
     width: 240px;
+    padding:10px;
 }
 select {
     margin:10px;
     color:violet;
     
     background-color:rgb(80, 80, 80);
+    padding:10px;
 }
-@media (min-width: 600px) {
+@media (min-width: 840px) {
     #image-grid-container { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (min-width: 1200px) {
+    header { grid-template-columns: repeat(2,1fr); }
+}
+@media (min-width: 1200px) {
     #image-grid-container { grid-template-columns: repeat(3, 1fr); }
-  }
-  @media (min-width: 1800px) {
+}
+@media (min-width: 1800px) {
     #image-grid-container { grid-template-columns: repeat(4, 1fr); }
-  }
+}

@@ -46,6 +46,7 @@ function getRandomImageURLFromLoremPicsum() {
     for (i = 0; i < 16; i++) {
       let imageURL = await getRandomImageURL(i);
       let imageElement = document.createElement('img');
+      imageElement.classList.add('fit');
       imageElement.src = imageURL;
       container.appendChild(imageElement);
     }
@@ -68,4 +69,24 @@ function getRandomImageURLFromLoremPicsum() {
         break;
     }
 });
+
+const buttonFull = document.getElementById('full');
+const buttonFit = document.getElementById('fit');
+buttonFit.addEventListener('click', () => {
+  console.log('fit on');
+  let img = document.getElementsByTagName('img');
+  for (let i = 0; i < img.length; i++) {
+    img[i].classList.remove('full');
+    img[i].classList.add('fit');
+  }
   
+});
+  
+buttonFull.addEventListener('click', () => {
+  console.log('full on');
+  let img = document.getElementsByTagName('img');
+  for (let i = 0; i < img.length; i++) {
+    img[i].classList.remove('fit');
+    img[i].classList.add('full');
+  }
+});
