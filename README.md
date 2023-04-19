@@ -8,7 +8,7 @@ Use your own API for Pexels, or test with Lorem Picsum!
 
 #Features:
 
-- [x] sources: Lorem Picsum
+- [x] sources: Lorem Picsum, Pexels (use your API, warning: don't include your API in git or in a website, use authorization instead)
 
 - [x] responsive design
 
