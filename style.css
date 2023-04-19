@@ -12,6 +12,7 @@ body {
     object-fit: contain;
     margin:auto;
     height:20vh;
+    max-width: 8400px;
 }
 
 .fit{
@@ -61,9 +62,9 @@ select {
     #image-grid-container { grid-template-columns: repeat(2, 1fr); }
     header { grid-template-columns: repeat(2,1fr); }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1680px) {
     #image-grid-container { grid-template-columns: repeat(3, 1fr); }
 }
-@media (min-width: 1800px) {
+@media (min-width: 2120px) {
     #image-grid-container { grid-template-columns: repeat(4, 1fr); }
 }
